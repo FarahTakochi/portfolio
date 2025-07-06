@@ -26,18 +26,24 @@
           <!-- Created navbar to be a sticky top with the background as a rounded pill with a large shadow and made the contents to be evenly aligned center -->
           <nav class="navbar sticky-md-top navbar-expand-sm shadow rounded-pill secondary-color">
             <div class="container-fluid">
-              <div class="navbar-nav">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <a class="nav-link active px-4" aria-current="page" style="color:white;" href="#about_me">About Me</a>
-                  <a class="nav-link px-4" style="color:white;" href="#projects_section">Projects</a>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel>My Portfolio</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <a class="navbar-brand px-4" style="color:white;" href="#">MY PORTFOLIO</a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <a class="nav-link px-4" style="color:white;" href="https://www.linkedin.com/in/wan-nur-farah-wan-mohamed-azizi-1413b1253" target="_blank">LinkedIn</a>
-                  <a class="nav-link px-4" style="color:white;" href="https://github.com/FarahTakochi" target="_blank">GitHub</a>
+                <div class="navbar-nav">
+                  <div class="offcanvas-body">
+                    <a class="nav-link active px-4" aria-current="page" style="color:white;" href="#about_me">About Me</a>
+                    <a class="nav-link px-4" style="color:white;" href="#projects_section">Projects</a>
+                  </div>
+                  <a class="navbar-brand px-4" style="color:white;" href="#">MY PORTFOLIO</a>
+                  <div class="offcanvas-body">
+                    <a class="nav-link px-4" style="color:white;" href="https://www.linkedin.com/in/wan-nur-farah-wan-mohamed-azizi-1413b1253" target="_blank">LinkedIn</a>
+                    <a class="nav-link px-4" style="color:white;" href="https://github.com/FarahTakochi" target="_blank">GitHub</a>
+                  </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
                 </div>
               </div>
             </div>
